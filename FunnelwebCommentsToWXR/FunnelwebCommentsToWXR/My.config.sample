@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Rename this file to My.config and specify your settings-->
+<mySettings>
+  <!-- Root URL for your Funnelweb blog instance, make sure and end with a / -->
+  <rootUrl value="http://yourblog.com/"/>
+
+  <!-- Connection string to your Funnelweb database -->
+  <funnelwebConnectionString value=""/>
+</mySettings>
