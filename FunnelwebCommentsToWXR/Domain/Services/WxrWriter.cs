@@ -31,7 +31,7 @@ namespace Domain.Services
                     writer.WriteLine("<content:encoded><![CDATA[" + entry.Body + "]]></content:encoded>");
                     writer.WriteLine("<dsq:thread_identifier>" + entry.Id + "</dsq:thread_identifier>");
                     writer.WriteLine("<wp:post_date_gmt>" + entry.Published.ToString("yyyy-MM-dd HH:mm:ss") + "</wp:post_date_gmt>");
-                    writer.WriteLine("<wp:comment_status>" + entry.IsDiscussionEnabled.ToString() + "</wp:comment_status>");
+                    writer.WriteLine("<wp:comment_status>" + (entry.IsDiscussionEnabled ? "open" : "closed") +  "</wp:comment_status>");
 
                     foreach (var comment in entry.Comments)
                     {
